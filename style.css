@@ -1,0 +1,167 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar-background {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-collapse {
+    background-color: #fff;
+}
+
+/* Banner */
+.banner {
+    padding-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    width: 100%;
+}
+
+.banner h1 {
+    font-size: 60pt;
+    font-weight: bold;
+}
+
+.banner p {
+    margin-top: 2rem;
+    font-weight: lighter;
+    /* font-style: italic; */
+}
+
+/* CLASS LIST */
+.class-list,
+section {
+    padding-top: 78px;
+    padding-bottom: 150px;
+}
+
+.class-icon-logo {
+    text-align: center;
+}
+
+.class-icon-logo h5 {
+    font-weight: bold;
+}
+
+.class-icon-logo i {
+    font-size: 100pt;
+    margin-bottom: 2rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Responsive font in banner */
+@media (max-width: 1150px) {
+    .banner h1 {
+        font-size: 40pt;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner h1 {
+        font-size: 40pt;
+    }
+}
+
+@media (max-width: 990px) {
+    .banner h1 {
+        font-size: 30pt;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner h1 {
+        font-size: 30pt;
+    }
+}
+
+@media (max-width: 440px) {
+    .banner {
+        padding-top: 250px;
+    }
+
+    .banner h1 {
+        font-size: 20pt;
+    }
+}
+
+/* Shadow */
+.card.shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* Loader spinner */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 9999;
+    transition: opacity 1s, visibility 1s;
+
+    background-image: url(assets/images/spinner.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top: 15px solid #009575;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+} */
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+a.active {
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: 150px;
+}
+
+.footer div div ul li a:hover {
+    color: #009575 !important;
+}
+
+/* Footer */
+
+
+.avatar-img {
+    border-radius: 50%;
+}
+
+.overflox-x-hidden {
+    overflow-x: hidden;
+}

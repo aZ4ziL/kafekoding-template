@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafekoding | Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Hover style -->
+    <link rel="stylesheet" href="assets/hover/hover.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loader spinner -->
+    <div class="loader">
+        <div class="loader-image"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-background fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="navbarBrand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="navbarLink" href="#banner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navbarLink" href="#class-list">Daftar Kelas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            data-bs-target="#dropdownAboutUs" aria-expanded="false">
+                            Tentang Kami
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" id="dropdownAboutUs">
+                            <li><a class="dropdown-item" id="navbarLink" href="#fajri-fath">Fajri Fath</a></li>
+                            <li><a class="dropdown-item" id="navbarLink" href="#azari">Azari</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navbarLink" href="#contact-us">Hubungi Kami</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="btn btn-outline-dark" data-bs-target="#modalLogin" data-bs-toggle="modal">
+                        <i class="fas fa-sign-in me-1"></i>
+                        Login
+                    </button>
+                    <button class="btn btn-dark">
+                        <i class="fab fa-github me-1"></i>
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+        class="scrollspy-example" tabindex="0">
+
+        <section class="banner" id="banner">
+            <h1>Welcome To Kafekoding Community</h1>
+            <p class="px-5">Used by some of the world's largest companies, Next.js enables you to create full-stack web
+                applications
+                by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the
+                fastest builds.</p>
+            <div class="d-flex align-items-center gap-2 justify-content-center">
+                <button type="button" class="btn btn-dark">Register Now</button>
+                <button type="button" class="btn btn-outline-dark">Hubungi Kami</button>
+            </div>
+        </section>
+
+        <!-- Daftar Kelas -->
+        <section id="class-list" class="class-list" style="overflow-x: hidden;">
+            <h1 class="display-4 text-center text-uppercase mb-3 text-decoration-underline" data-aos="fade-up"
+                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                data-aos-mirror="false" data-aos-once="false">Daftar Kelas</h1>
+
+            <div class="row justify-content-center">
+                <!-- Python -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-python"></i>
+                                <h5 class="card-title">Python Programming</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Javascript -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-js"></i>
+                                <h5 class="card-title">Javascript Programming</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML / CSS -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-html5"></i>
+                                <h5 class="card-title">HTML & CSS</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Python -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-python"></i>
+                                <h5 class="card-title">Python Programming</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Javascript -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-js"></i>
+                                <h5 class="card-title">Javascript Programming</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML / CSS -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                    data-aos-once="false">
+                    <div class="card shadow pointer hvr-grow">
+                        <div class="card-body text-center">
+                            <div class="class-icon-logo">
+                                <i class="fab fa-html5"></i>
+                                <h5 class="card-title">HTML & CSS</h5>
+                            </div>
+                            <p class="text-muted mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione,
+                                omnis inventore sint neque eaque quam asperiores cupiditate aspernatur repellat?
+                            </p>
+                            <a href="" class="btn btn-dark">
+                                Daftar disini
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daftar Kelas -->
+
+        <!-- Tentang Kami -->
+        <section id="about-us">
+            <h1 class="text-uppercase text-center text-decoration-underline mb-5">Tentang Kami</h1>
+
+            <!-- Fajri Fath -->
+            <div class="row" id="fajri-fath">
+                <div class="row align-items-center"
+                    style="margin-bottom: 10rem; padding-top: 78px; overflow-x: hidden;">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                        data-aos-once="false">
+                        <h5 class="fw-bold">Fajri Fath</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum iure quae sit
+                            vitae voluptatem quasi distinctio natus voluptatibus magni. Nihil pariatur eius
+                            dicta veritatis officia distinctio ex facilis natus et?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum iure quae sit
+                            vitae voluptatem quasi distinctio natus voluptatibus magni. Nihil pariatur eius
+                            dicta veritatis officia distinctio ex facilis natus et?</p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                        data-aos-once="false">
+                        <img src="assets/images/fayyaz-kh-N1vBPahiUlA-unsplash.jpg" alt=""
+                            class="card-img-top avatar-img" height="450">
+                    </div>
+                </div>
+
+                <!-- Azari -->
+                <div class="row align-items-center" id="azari"
+                    style="margin-bottom: 10rem; padding-top: 78px; overflow-x: hidden;">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">Azari</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum iure quae sit
+                            vitae voluptatem quasi distinctio natus voluptatibus magni. Nihil pariatur eius
+                            dicta veritatis officia distinctio ex facilis natus et?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum iure quae sit
+                            vitae voluptatem quasi distinctio natus voluptatibus magni. Nihil pariatur eius
+                            dicta veritatis officia distinctio ex facilis natus et?</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/images/ruben-valenzuela-RvOv1spqF14-unsplash.jpg" alt=""
+                            class="card-img-top avatar-img" height="450">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tentang Kami -->
+    </div>
+
+    <footer class="footer bg-dark p-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white text-uppercase">Daftar Kelas</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted text-decoration-none">Python</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Javascript</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">HTML & CSS</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">PHP</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">UI/UX</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Desain Grafis</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Laravel</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white text-uppercase">Mentor</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted text-decoration-none">Azari</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Salsabilla</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Fajri Fath</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Azzurra</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Citra</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Azrill</a></li>
+                    <li><a href="#" class="text-muted text-decoration-none">Ayu</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLoginLabel">Silahkan Login untuk daftar kelas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text text-white bg-dark" id="basic-login-addon-username"><i
+                                    class="fas fa-user"></i></span>
+                            <input type="text" class="form-control border-dark" name="username" id="id_username"
+                                placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-login-addon-username">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text text-white bg-dark" id="basic-login-addon-password"><i
+                                    class="fas fa-key"></i></span>
+                            <input type="password" class="form-control border-dark" name="password" id="id_password"
+                                placeholder="Password" aria-label="Password"
+                                aria-describedby="basic-login-addon-password">
+                        </div>
+                        <div class="d-flex gap-2 align-center justify-content-center mb-3">
+                            <button class="btn btn-link"><i class="fab fa-google fa-2x text-dark"></i></button>
+                            <button class="btn btn-link"><i class="fab fa-facebook fa-2x text-dark"></i></button>
+                            <button class="btn btn-link"><i class="fab fa-instagram fa-2x text-dark"></i></button>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-dark">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(window).bind("load", () => {
+            setTimeout(() => {
+                $(".loader").fadeOut();
+            }, 1000);
+        })
+
+        $("[id=navbarLink]").click((e) => {
+            $("#navbarSupportedContent").collapse("hide");
+        })
+
+        window.addEventListener("scroll", function () {
+            let activeLink = document.querySelector(".active");
+            document.querySelector("#navbarBrand").textContent = activeLink.textContent;
+        })
+    </script>
+    <!-- <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader")
+
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loaderHit(loader);
+            })
+        })
+
+        function loaderHit(loader) {
+            setTimeout(() => {
+                document.body.removeChild(loader);
+            }, 2000);
+        }
+    </script> -->
+</body>
+
+</html>
